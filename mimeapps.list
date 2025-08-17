@@ -1,0 +1,10 @@
+[Default Applications]
+text/plain=com.gexperts.Tilix.desktop
+application/pdf=firefox-esr.desktop
+
+[Added Associations]
+text/plain=com.gexperts.Tilix.desktop;
+image/png=qimgv.desktop;
+application/pdf=brave-browser.desktop;firefox-esr.desktop;
+text/csv=dev.zed.Zed.desktop;
+image/jpeg=qimgv.desktop;
