@@ -4,12 +4,14 @@ exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 # notifications
 exec swaync
 
-exec swayidle \
-   timeout 900 'swaylock -f -c 000000' \
-   timeout 1800 'swaymsg "output * dpms off"' \
-      resume 'swaymsg "output * dpms on"' \
-   before-sleep 'swaylock -f -c 000000'
 
-
-
+exec swayidle -w \
+  timeout 1800 'playerctl status | grep -q Playing || swaylock \
+    --color 001133 \
+    --inside-color 001133 \
+    --ring-color 003366 \
+    --line-color 00000000 \
+    --text-color ffffff' \
+  timeout 2100 'playerctl status | grep -q Playing || swaymsg "output * dpms off"' \
+  resume 'swaymsg "output * dpms on"'
 

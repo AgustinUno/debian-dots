@@ -95,7 +95,10 @@ $lock)
   if [[ -x '/usr/bin/betterlockscreen' ]]; then
     betterlockscreen -l
   elif [[ -x '/usr/bin/swaylock' ]]; then
-    swaylock
+
+    swaylock --color 001133 --inside-color 001133 \
+      --ring-color 003366 --line-color 00000000 \
+      --text-color ffffff
   fi
   ;;
 $suspend)
