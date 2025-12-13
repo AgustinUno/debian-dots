@@ -1,3 +1,0 @@
-vim.opt.wrap = true
-vim.opt.linebreak = true -- don't cut words in half
-vim.opt.breakindent = true -- indent wrapped lines

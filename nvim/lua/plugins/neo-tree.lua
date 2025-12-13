@@ -3,4 +3,7 @@ return {
   opts = {
     window = { position = "right" },
   },
+  keys = {
+    { "<leader>e", "<cmd>Neotree filesystem toggle right<cr>" },
+  },
 }
