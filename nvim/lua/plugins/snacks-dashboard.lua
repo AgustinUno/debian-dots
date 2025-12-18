@@ -3,6 +3,7 @@ return {
     "folke/snacks.nvim",
     opts = {
       dashboard = {
+        enabled = true,
         width = 60,
         autokeys = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
         preset = {
